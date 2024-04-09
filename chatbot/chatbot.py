@@ -6,7 +6,7 @@ from nltk.cluster.util import cosine_distance
 
 ## Lee archivo y listas de preguntas
 def CargaPreguntas(archivo):
-	f = open(archivo,"r")
+	f = open("E:\\ITM_9_InternetDeLasCosas\\chatbot\\preg2.txt","r")
 	texto = f.read()
 	pregs = sent_tokenize(texto)
 	return (texto,pregs)
@@ -28,7 +28,7 @@ def crearVector(oracion,diccionario):
 	return vector 
 
 def cargaRespuesta(archivo,indice):
-	f = open(archivo,"r")
+	f = open("E:\\ITM_9_InternetDeLasCosas\\chatbot\\preg2.txt","r")
 	texto = f.read()
 	res = sent_tokenize(texto)
 	return (res[indice])
